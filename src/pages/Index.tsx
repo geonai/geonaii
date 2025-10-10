@@ -11,7 +11,7 @@ const Index = () => {
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <img src={logo} alt="Logo" className="h-10 w-auto object-contain" />
-            <span className="text-xl font-bold">Geon AI</span>
+            
           </div>
           <div className="flex items-center gap-2">
             <span className="text-sm text-muted-foreground">×</span>
