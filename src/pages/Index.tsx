@@ -8,7 +8,7 @@ const Index = () => {
   return <div className="min-h-screen bg-background text-foreground">
       {/* Header */}
       <header className="border-b border-border/50 backdrop-blur-sm sticky top-0 z-50 bg-background/80">
-        <div className="container mx-auto px-4 py-4 flex items-center justify-center">
+        <div className="container mx-auto px-4 py-4 flex items-center justify-start">
           <div className="flex items-center gap-4">
             <img src={logo} alt="GEON AI Logo" className="h-10 w-auto object-contain" />
             <span className="text-2xl text-muted-foreground">×</span>
