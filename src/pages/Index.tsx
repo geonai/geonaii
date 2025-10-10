@@ -46,7 +46,7 @@ const Index = () => {
             </Button>
 
             {/* Stats Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-12 justify-items-start">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-12">
               <StatCard icon={Clock} value="24/7" label="Atendimento Ininterrupto" iconColor="text-blue-400" />
               <StatCard icon={Zap} value="10s" label="Tempo Médio de Resposta" iconColor="text-yellow-400" />
               <StatCard icon={TrendingUp} value="+200%" label="Leads Qualificados" iconColor="text-cyan-400" />
