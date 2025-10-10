@@ -2,17 +2,10 @@ import { Button } from "@/components/ui/button";
 import { StatCard } from "@/components/StatCard";
 import { FeatureCard } from "@/components/FeatureCard";
 import { IntegrationBadge } from "@/components/IntegrationBadge";
-import { 
-  Clock, TrendingDown, Zap, TrendingUp, 
-  Brain, MessageSquare, Calendar, BookOpen,
-  AlertTriangle, CheckCircle2, Target, BarChart3,
-  Database, Mail, Phone, Users
-} from "lucide-react";
+import { Clock, TrendingDown, Zap, TrendingUp, Brain, MessageSquare, Calendar, BookOpen, AlertTriangle, CheckCircle2, Target, BarChart3, Database, Mail, Phone, Users } from "lucide-react";
 import logo from "@/assets/logo.png";
-
 const Index = () => {
-  return (
-    <div className="min-h-screen bg-background text-foreground">
+  return <div className="min-h-screen bg-background text-foreground">
       {/* Header */}
       <header className="border-b border-border/50 backdrop-blur-sm sticky top-0 z-50 bg-background/80">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
@@ -89,17 +82,10 @@ const Index = () => {
                 </p>
                 <p className="text-sm text-muted-foreground mb-4">Cada lead não atendido rapidamente ou mal qualificado representa:</p>
                 <ul className="space-y-3">
-                  {[
-                    "Perda de oportunidade de venda (ticket médio alto de ERP)",
-                    "Desperdício de tempo da equipe com leads não qualificados",
-                    "Experiência ruim para o potencial cliente",
-                    "Vantagem para concorrentes"
-                  ].map((item, i) => (
-                    <li key={i} className="flex items-start gap-2 text-sm">
+                  {["Perda de oportunidade de venda (ticket médio alto de ERP)", "Desperdício de tempo da equipe com leads não qualificados", "Experiência ruim para o potencial cliente", "Vantagem para concorrentes"].map((item, i) => <li key={i} className="flex items-start gap-2 text-sm">
                       <span className="text-destructive mt-1">•</span>
                       <span className="text-muted-foreground">{item}</span>
-                    </li>
-                  ))}
+                    </li>)}
                 </ul>
               </div>
 
@@ -113,21 +99,28 @@ const Index = () => {
                   Geon SDR especializado resolve esses desafios com:
                 </p>
                 <ul className="space-y-3">
-                  {[
-                    { label: "Qualificação precisa", desc: "de leads por segmento e porte" },
-                    { label: "Disponibilidade 24/7", desc: "para capturar leads a qualquer hora" },
-                    { label: "Conhecimento técnico", desc: "sobre S7 ERP e segmentos atendidos" },
-                    { label: "Follow-up consistente", desc: "e automatizado" },
-                    { label: "Escala ilimitada", desc: "sem aumentar custos proporcionalmente" }
-                  ].map((item, i) => (
-                    <li key={i} className="flex items-start gap-2 text-sm">
+                  {[{
+                  label: "Qualificação precisa",
+                  desc: "de leads por segmento e porte"
+                }, {
+                  label: "Disponibilidade 24/7",
+                  desc: "para capturar leads a qualquer hora"
+                }, {
+                  label: "Conhecimento técnico",
+                  desc: "sobre S7 ERP e segmentos atendidos"
+                }, {
+                  label: "Follow-up consistente",
+                  desc: "e automatizado"
+                }, {
+                  label: "Escala ilimitada",
+                  desc: "sem aumentar custos proporcionalmente"
+                }].map((item, i) => <li key={i} className="flex items-start gap-2 text-sm">
                       <CheckCircle2 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                       <span>
                         <strong className="text-foreground">{item.label}</strong>{" "}
                         <span className="text-muted-foreground">{item.desc}</span>
                       </span>
-                    </li>
-                  ))}
+                    </li>)}
                 </ul>
               </div>
             </div>
@@ -140,9 +133,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Geon SDR, especialista no ERP S7
-              </h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">Geon SDR, especialista na Hokinet</h2>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
                 Um especialista virtual que trabalha 24/7 para qualificar leads, agendar demonstrações 
                 e garantir que sua equipe comercial foque apenas em oportunidades reais.
@@ -150,46 +141,10 @@ const Index = () => {
             </div>
 
             <div className="grid md:grid-cols-2 gap-6">
-              <FeatureCard
-                icon={Brain}
-                title="Qualificação Inteligente"
-                items={[
-                  "Identifica segmento e porte da empresa",
-                  "Entende dores específicas do negócio",
-                  "Avalia maturidade digital e urgência",
-                  "Classifica leads por score de prioridade"
-                ]}
-              />
-              <FeatureCard
-                icon={MessageSquare}
-                title="Atendimento Multicanal"
-                items={[
-                  "Chat (WhatsApp, site) 24/7",
-                  "Voz (telefone) com naturalidade",
-                  "Integração automática com CRM",
-                  "Registro completo de interações"
-                ]}
-              />
-              <FeatureCard
-                icon={Calendar}
-                title="Agendamento Inteligente"
-                items={[
-                  "Agenda demos automaticamente",
-                  "Envia lembretes automáticos",
-                  "Prepara briefing para o closer",
-                  "Reagenda em caso de no-show"
-                ]}
-              />
-              <FeatureCard
-                icon={BookOpen}
-                title="Conhecimento Especializado"
-                items={[
-                  "Funcionalidades completas do S7 ERP",
-                  "Módulos de gestão de produção",
-                  "Roteirização inteligente e B2B",
-                  "Expertise em 5+ segmentos industriais"
-                ]}
-              />
+              <FeatureCard icon={Brain} title="Qualificação Inteligente" items={["Identifica segmento e porte da empresa", "Entende dores específicas do negócio", "Avalia maturidade digital e urgência", "Classifica leads por score de prioridade"]} />
+              <FeatureCard icon={MessageSquare} title="Atendimento Multicanal" items={["Chat (WhatsApp, site) 24/7", "Voz (telefone) com naturalidade", "Integração automática com CRM", "Registro completo de interações"]} />
+              <FeatureCard icon={Calendar} title="Agendamento Inteligente" items={["Agenda demos automaticamente", "Envia lembretes automáticos", "Prepara briefing para o closer", "Reagenda em caso de no-show"]} />
+              <FeatureCard icon={BookOpen} title="Conhecimento Especializado" items={["Funcionalidades completas do S7 ERP", "Módulos de gestão de produção", "Roteirização inteligente e B2B", "Expertise em 5+ segmentos industriais"]} />
             </div>
           </div>
         </div>
@@ -210,14 +165,7 @@ const Index = () => {
             </div>
 
             <div className="flex flex-wrap gap-3 justify-center">
-              {[
-                "Bancos de Dados", "Agendas", "CRMs", "ERPs", "Helpdesk", 
-                "E-commerce", "Pagamentos", "Marketing", "Planilhas", 
-                "Comunicação", "E-mail", "Telefonia", "Ferramentas de BI", 
-                "Redes Sociais", "APIs Customizadas"
-              ].map((integration) => (
-                <IntegrationBadge key={integration} name={integration} />
-              ))}
+              {["Bancos de Dados", "Agendas", "CRMs", "ERPs", "Helpdesk", "E-commerce", "Pagamentos", "Marketing", "Planilhas", "Comunicação", "E-mail", "Telefonia", "Ferramentas de BI", "Redes Sociais", "APIs Customizadas"].map(integration => <IntegrationBadge key={integration} name={integration} />)}
             </div>
           </div>
         </div>
@@ -249,12 +197,10 @@ const Index = () => {
                   <p className="text-sm text-muted-foreground mt-1">por mês</p>
                 </div>
                 <ul className="space-y-2">
-                  {["Horário comercial (8h/dia)", "Segunda a sexta", "Férias e atestados"].map((item, i) => (
-                    <li key={i} className="flex items-start gap-2 text-sm text-muted-foreground">
+                  {["Horário comercial (8h/dia)", "Segunda a sexta", "Férias e atestados"].map((item, i) => <li key={i} className="flex items-start gap-2 text-sm text-muted-foreground">
                       <span>•</span>
                       <span>{item}</span>
-                    </li>
-                  ))}
+                    </li>)}
                 </ul>
               </div>
 
@@ -269,12 +215,10 @@ const Index = () => {
                   <p className="text-sm text-muted-foreground mt-1">por mês</p>
                 </div>
                 <ul className="space-y-2">
-                  {["24 horas por dia", "7 dias por semana", "Sem interrupções"].map((item, i) => (
-                    <li key={i} className="flex items-start gap-2 text-sm">
+                  {["24 horas por dia", "7 dias por semana", "Sem interrupções"].map((item, i) => <li key={i} className="flex items-start gap-2 text-sm">
                       <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0" />
                       <span>{item}</span>
-                    </li>
-                  ))}
+                    </li>)}
                 </ul>
               </div>
             </div>
@@ -286,17 +230,10 @@ const Index = () => {
                 Impacto para Hokinet:
               </h4>
               <div className="grid md:grid-cols-2 gap-4">
-                {[
-                  "Leads que chegam fora do horário comercial são atendidos imediatamente",
-                  "Nenhum lead perdido por falta de disponibilidade",
-                  "Cobertura em feriados e finais de semana",
-                  "Atendimento simultâneo de múltiplos leads"
-                ].map((item, i) => (
-                  <div key={i} className="flex items-start gap-2 text-sm">
+                {["Leads que chegam fora do horário comercial são atendidos imediatamente", "Nenhum lead perdido por falta de disponibilidade", "Cobertura em feriados e finais de semana", "Atendimento simultâneo de múltiplos leads"].map((item, i) => <div key={i} className="flex items-start gap-2 text-sm">
                     <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                     <span className="text-muted-foreground">{item}</span>
-                  </div>
-                ))}
+                  </div>)}
               </div>
             </div>
           </div>
@@ -334,7 +271,9 @@ const Index = () => {
                       <span className="text-sm font-semibold">160h</span>
                     </div>
                     <div className="h-3 bg-secondary rounded-full overflow-hidden">
-                      <div className="h-full bg-muted-foreground" style={{ width: '22%' }}></div>
+                      <div className="h-full bg-muted-foreground" style={{
+                      width: '22%'
+                    }}></div>
                     </div>
                   </div>
                   <div>
@@ -343,7 +282,9 @@ const Index = () => {
                       <span className="text-sm font-semibold text-primary">720h</span>
                     </div>
                     <div className="h-3 bg-secondary rounded-full overflow-hidden">
-                      <div className="h-full bg-primary" style={{ width: '100%' }}></div>
+                      <div className="h-full bg-primary" style={{
+                      width: '100%'
+                    }}></div>
                     </div>
                   </div>
                 </div>
@@ -407,8 +348,6 @@ const Index = () => {
           <p>© 2025 Geon AI. Infraestrutura e Automação de IA para maximizar resultados.</p>
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
