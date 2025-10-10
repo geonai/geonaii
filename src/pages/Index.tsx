@@ -36,7 +36,7 @@ const Index = () => {
             </h1>
             
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Especialista em qualificação de leads e agendamento de demonstrações para o S7 ERP. 
+              Especialista em qualificação de leads e agendamento de demonstrações para a Hokinet. 
               Atende via chat e voz 24/7, com conhecimento profundo sobre gestão industrial e distribuição.
             </p>
 
