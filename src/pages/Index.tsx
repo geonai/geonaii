@@ -22,7 +22,7 @@ const Index = () => {
           </div>
           <div className="flex items-center gap-2">
             <span className="text-sm text-muted-foreground">×</span>
-            <span className="text-2xl font-bold text-primary">SN</span>
+            <span className="text-2xl font-bold text-primary">Hokinet</span>
           </div>
         </div>
       </header>
@@ -72,7 +72,7 @@ const Index = () => {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Por que SN Sistemas precisa de um Geon SDR?
+                Por que Hokinet precisa de um Geon SDR?
               </h2>
             </div>
 
@@ -85,7 +85,7 @@ const Index = () => {
                 </div>
                 <p className="text-muted-foreground mb-6">
                   Com presença em <strong className="text-foreground">24 estados</strong> e mais de{" "}
-                  <strong className="text-foreground">700 empresas</strong> atendidas, a SN Sistemas recebe um volume crescente de leads para o S7 ERP.
+                  <strong className="text-foreground">700 empresas</strong> atendidas, a Hokinet recebe um volume crescente de leads para o S7 ERP.
                 </p>
                 <p className="text-sm text-muted-foreground mb-4">Cada lead não atendido rapidamente ou mal qualificado representa:</p>
                 <ul className="space-y-3">
@@ -283,7 +283,7 @@ const Index = () => {
             <div className="mt-12 bg-card border border-border rounded-lg p-8">
               <h4 className="text-xl font-bold mb-6 flex items-center gap-2">
                 <Target className="w-6 h-6 text-primary" />
-                Impacto para SN Sistemas:
+                Impacto para Hokinet:
               </h4>
               <div className="grid md:grid-cols-2 gap-4">
                 {[
