@@ -73,7 +73,7 @@ const Index = () => {
                   <h3 className="text-2xl font-bold">O Desafio</h3>
                 </div>
                 <p className="text-muted-foreground mb-6">
-                  Com presença em <strong className="text-foreground">24 estados</strong> e mais de{" "}
+                  Com presença em <strong className="text-foreground">Nacional</strong> e mais de{" "}
                   <strong className="text-foreground">700 empresas</strong> atendidas, a Hokinet recebe um volume crescente de leads para o S7 ERP.
                 </p>
                 <p className="text-sm text-muted-foreground mb-4">Cada lead não atendido rapidamente ou mal qualificado representa:</p>
