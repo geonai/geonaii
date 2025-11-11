@@ -12,7 +12,7 @@ const Index = () => {
           <div className="flex items-center gap-4">
             <img src={logo} alt="GEON AI Logo" className="h-10 w-auto object-contain" />
             <span className="text-2xl text-muted-foreground">×</span>
-            <span className="text-2xl font-bold text-primary">Hokinet</span>
+            <span className="text-2xl font-bold text-primary">Kikos Fitness</span>
           </div>
         </div>
       </header>
@@ -36,8 +36,8 @@ const Index = () => {
             </h1>
             
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Especialista em qualificação de leads e agendamento de demonstrações para a Hokinet. 
-              Atende via chat e voz 24/7, com conhecimento profundo sobre gestão industrial e distribuição.
+              Especialista em qualificação de leads e agendamento de vendas para a Kikos Fitness. 
+              Atende via chat e voz 24/7, com conhecimento profundo sobre equipamentos fitness, cardiovasculares, musculação e soluções para academias.
             </p>
 
             <Button size="lg" className="text-lg px-8 shadow-[0_0_20px_rgba(0,198,255,0.3)] hover:shadow-[0_0_30px_rgba(0,198,255,0.5)]">
@@ -49,7 +49,7 @@ const Index = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-12">
               <StatCard icon={Clock} value="24/7" label="Atendimento Ininterrupto" iconColor="text-blue-400" />
               <StatCard icon={Zap} value="10s" label="Tempo Médio de Resposta" iconColor="text-yellow-400" />
-              <StatCard icon={TrendingUp} value="+200%" label="Leads Qualificados" iconColor="text-cyan-400" />
+              <StatCard icon={TrendingUp} value="149K" label="Seguidores nas Redes" iconColor="text-cyan-400" />
             </div>
           </div>
         </div>
@@ -61,7 +61,7 @@ const Index = () => {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Por que Hokinet precisa de um Geon SDR?
+                Por que Kikos Fitness precisa de um Geon SDR?
               </h2>
             </div>
 
@@ -73,12 +73,12 @@ const Index = () => {
                   <h3 className="text-2xl font-bold">O Desafio</h3>
                 </div>
                 <p className="text-muted-foreground mb-6">
-                  Com presença em <strong className="text-foreground">Nacional</strong> e mais de{" "}
-                  <strong className="text-foreground">700 empresas</strong> atendidas, a Hokinet recebe um volume crescente de leads para o S7 ERP.
+                  Com <strong className="text-foreground">35 anos de mercado</strong>, presença nacional e{" "}
+                  <strong className="text-foreground">149.000 seguidores</strong> nas redes sociais, a Kikos Fitness recebe um volume crescente de leads para equipamentos fitness B2C e B2B.
                 </p>
                 <p className="text-sm text-muted-foreground mb-4">Cada lead não atendido rapidamente ou mal qualificado representa:</p>
                 <ul className="space-y-3">
-                  {["Perda de oportunidade de venda (ticket médio alto de ERP)", "Desperdício de tempo da equipe com leads não qualificados", "Experiência ruim para o potencial cliente", "Vantagem para concorrentes"].map((item, i) => <li key={i} className="flex items-start gap-2 text-sm">
+                  {["Perda de oportunidade de venda (ticket médio alto para equipamentos profissionais)", "Desperdício de tempo da equipe com leads não qualificados", "Experiência ruim para o potencial cliente", "Vantagem para concorrentes do mercado fitness"].map((item, i) => <li key={i} className="flex items-start gap-2 text-sm">
                       <span className="text-destructive mt-1">•</span>
                       <span className="text-muted-foreground">{item}</span>
                     </li>)}
@@ -97,13 +97,13 @@ const Index = () => {
                 <ul className="space-y-3">
                   {[{
                   label: "Qualificação precisa",
-                  desc: "de leads por segmento e porte"
+                  desc: "de leads por segmento (B2C/B2B) e tipo de equipamento"
                 }, {
                   label: "Disponibilidade 24/7",
                   desc: "para capturar leads a qualquer hora"
                 }, {
                   label: "Conhecimento técnico",
-                  desc: "sobre S7 ERP e segmentos atendidos"
+                  desc: "sobre linhas de produtos, especificações e aplicações"
                 }, {
                   label: "Follow-up consistente",
                   desc: "e automatizado"
@@ -129,7 +129,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Geon SDR, especialista na Hokinet</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">Geon SDR, especialista na Kikos Fitness</h2>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
                 Um especialista virtual que trabalha 24/7 para qualificar leads, agendar demonstrações 
                 e garantir que sua equipe comercial foque apenas em oportunidades reais.
@@ -137,10 +137,10 @@ const Index = () => {
             </div>
 
             <div className="grid md:grid-cols-2 gap-6">
-              <FeatureCard icon={Brain} title="Qualificação Inteligente" items={["Identifica segmento e porte da empresa", "Entende dores específicas do negócio", "Avalia maturidade digital e urgência", "Classifica leads por score de prioridade"]} />
-              <FeatureCard icon={MessageSquare} title="Atendimento Multicanal" items={["Chat (WhatsApp, site) 24/7", "Voz (telefone) com naturalidade", "Integração automática com CRM", "Registro completo de interações"]} />
-              <FeatureCard icon={Calendar} title="Agendamento Inteligente" items={["Agenda demos automaticamente", "Envia lembretes automáticos", "Prepara briefing para o closer", "Reagenda em caso de no-show"]} />
-              <FeatureCard icon={BookOpen} title="Conhecimento Especializado" items={["Funcionalidades completas do S7 ERP", "Módulos de gestão de produção", "Roteirização inteligente e B2B", "Expertise em 5+ segmentos industriais"]} />
+              <FeatureCard icon={Brain} title="Qualificação Inteligente" items={["Identifica segmento (B2C residencial ou B2B academias/empresas)", "Entende necessidades específicas do cliente", "Avalia espaço disponível e objetivos fitness", "Classifica leads por potencial de compra"]} />
+              <FeatureCard icon={MessageSquare} title="Atendimento Multicanal" items={["WhatsApp B2B (11 991078698) e SAC (54 954141816)", "Chat no site 24/7", "Integração automática com CRM", "Registro completo de interações"]} />
+              <FeatureCard icon={Calendar} title="Agendamento Inteligente" items={["Agenda visitas ao showroom automaticamente", "Envia lembretes e informações de produtos", "Prepara briefing para equipe de vendas", "Follow-up de orçamentos e propostas"]} />
+              <FeatureCard icon={BookOpen} title="Conhecimento Especializado" items={["Portfólio completo: Cardiovasculares, Musculação, Acessórios", "Linhas profissionais (Concept, Titanium, Monster, etc)", "Diferenças entre modelos residenciais e profissionais", "Promoções: Kikos Black, Outlet, parcelamento 21x"]} />
             </div>
           </div>
         </div>
@@ -223,10 +223,10 @@ const Index = () => {
             <div className="mt-12 bg-card border border-border rounded-lg p-8">
               <h4 className="text-xl font-bold mb-6 flex items-center gap-2">
                 <Target className="w-6 h-6 text-primary" />
-                Impacto para Hokinet:
+                Impacto para Kikos Fitness:
               </h4>
               <div className="grid md:grid-cols-2 gap-4">
-                {["Leads que chegam fora do horário comercial são atendidos imediatamente", "Nenhum lead perdido por falta de disponibilidade", "Cobertura em feriados e finais de semana", "Atendimento simultâneo de múltiplos leads"].map((item, i) => <div key={i} className="flex items-start gap-2 text-sm">
+                {["Leads que chegam fora do horário comercial são atendidos imediatamente", "Nenhum lead perdido por falta de disponibilidade", "Atendimento em finais de semana e feriados", "Resposta simultânea para múltiplos clientes (B2C e B2B)"].map((item, i) => <div key={i} className="flex items-start gap-2 text-sm">
                     <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                     <span className="text-muted-foreground">{item}</span>
                   </div>)}
