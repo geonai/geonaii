@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { StatCard } from "@/components/StatCard";
 import { FeatureCard } from "@/components/FeatureCard";
 import { IntegrationBadge } from "@/components/IntegrationBadge";
-import { Clock, TrendingDown, Zap, TrendingUp, Brain, MessageSquare, Calendar, BookOpen, AlertTriangle, CheckCircle2, Target, BarChart3, Database, Mail, Phone, Users } from "lucide-react";
+import { Clock, TrendingDown, Zap, TrendingUp, Brain, MessageSquare, Calendar, BookOpen, AlertTriangle, CheckCircle2, Target, BarChart3, Database, Mail, Phone, Users, Building2, Store, Award, Package, Flag, Wrench, CreditCard, Smartphone, Home, Briefcase, Heart, Dumbbell, Instagram, Facebook, Linkedin } from "lucide-react";
 import logo from "@/assets/logo.png";
 const Index = () => {
   return <div className="min-h-screen bg-background text-foreground">
@@ -22,9 +22,19 @@ const Index = () => {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary/20 via-background to-background"></div>
         <div className="container mx-auto px-4 relative">
           <div className="max-w-5xl mx-auto text-center space-y-8">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-sm">
-              <Zap className="w-4 h-4 text-primary" />
-              <span>Infraestrutura e Automação de IA</span>
+            <div className="flex flex-wrap justify-center gap-3 mb-4">
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-sm">
+                <Award className="w-4 h-4 text-primary" />
+                <span>35 anos de pioneirismo</span>
+              </div>
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-sm">
+                <CheckCircle2 className="w-4 h-4 text-primary" />
+                <span>7.9/10 no Reclame Aqui</span>
+              </div>
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/20 rounded-full text-sm">
+                <Flag className="w-4 h-4 text-primary" />
+                <span>Top 3 fabricantes nacionais</span>
+              </div>
             </div>
             
             <h1 className="text-5xl md:text-7xl font-bold leading-tight">
@@ -46,10 +56,11 @@ const Index = () => {
             </Button>
 
             {/* Stats Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-12">
-              <StatCard icon={Clock} value="24/7" label="Atendimento Ininterrupto" iconColor="text-blue-400" />
-              <StatCard icon={Zap} value="10s" label="Tempo Médio de Resposta" iconColor="text-yellow-400" />
-              <StatCard icon={TrendingUp} value="149K" label="Seguidores nas Redes" iconColor="text-cyan-400" />
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 pt-12">
+              <StatCard icon={Building2} value="50.000+" label="Salas Fitness Equipadas" iconColor="text-emerald-400" />
+              <StatCard icon={Store} value="20" label="Showrooms no Brasil" iconColor="text-blue-400" />
+              <StatCard icon={Users} value="300" label="Revendedores Autorizados" iconColor="text-purple-400" />
+              <StatCard icon={TrendingUp} value="R$ 17bi" label="Mercado Fitness Brasil" iconColor="text-cyan-400" />
             </div>
           </div>
         </div>
@@ -73,10 +84,19 @@ const Index = () => {
                   <h3 className="text-2xl font-bold">O Desafio</h3>
                 </div>
                 <p className="text-muted-foreground mb-6">
-                  Com <strong className="text-foreground">35 anos de mercado</strong>, presença nacional e{" "}
-                  <strong className="text-foreground">149.000 seguidores</strong> nas redes sociais, a Kikos Fitness recebe um volume crescente de leads para equipamentos fitness B2C e B2B.
+                  A Kikos Fitness é <strong className="text-foreground">Top 3 fabricante nacional</strong> de equipamentos fitness, 
+                  com <strong className="text-foreground">50.000+ salas equipadas</strong> em todo Brasil. 
+                  Opera em um mercado que movimenta <strong className="text-foreground">R$ 17 bilhões/ano</strong>, 
+                  com <strong className="text-foreground">57.000 academias</strong> ativas e crescimento de{" "}
+                  <strong className="text-foreground">+12,5% ao ano</strong>.
                 </p>
-                <p className="text-sm text-muted-foreground mb-4">Cada lead não atendido rapidamente ou mal qualificado representa:</p>
+                <p className="text-sm text-muted-foreground mb-4">
+                  O Brasil é o <strong className="text-foreground">2º maior mercado fitness do mundo</strong>, 
+                  atrás apenas dos EUA. Com o volume crescente de leads vindos de{" "}
+                  <strong className="text-foreground">20 showrooms</strong>,
+                  <strong className="text-foreground"> e-commerce</strong> e{" "}
+                  <strong className="text-foreground">300 revendedores</strong>, cada lead não atendido representa:
+                </p>
                 <ul className="space-y-3">
                   {["Perda de oportunidade de venda (ticket médio alto para equipamentos profissionais)", "Desperdício de tempo da equipe com leads não qualificados", "Experiência ruim para o potencial cliente", "Vantagem para concorrentes do mercado fitness"].map((item, i) => <li key={i} className="flex items-start gap-2 text-sm">
                       <span className="text-destructive mt-1">•</span>
@@ -138,9 +158,324 @@ const Index = () => {
 
             <div className="grid md:grid-cols-2 gap-6">
               <FeatureCard icon={Brain} title="Qualificação Inteligente" items={["Identifica segmento (B2C residencial ou B2B academias/empresas)", "Entende necessidades específicas do cliente", "Avalia espaço disponível e objetivos fitness", "Classifica leads por potencial de compra"]} />
-              <FeatureCard icon={MessageSquare} title="Atendimento Multicanal" items={["WhatsApp B2B (11 991078698) e SAC (54 954141816)", "Chat no site 24/7", "Integração automática com CRM", "Registro completo de interações"]} />
+              <FeatureCard icon={MessageSquare} title="Atendimento Multicanal" items={["WhatsApp B2B (11 991078698) e SAC (54 954141816)", "Chat no site 24/7", "20 showrooms físicos para agendamento de test-drive", "Integração automática com CRM", "Registro completo de interações"]} />
               <FeatureCard icon={Calendar} title="Agendamento Inteligente" items={["Agenda visitas ao showroom automaticamente", "Envia lembretes e informações de produtos", "Prepara briefing para equipe de vendas", "Follow-up de orçamentos e propostas"]} />
-              <FeatureCard icon={BookOpen} title="Conhecimento Especializado" items={["Portfólio completo: Cardiovasculares, Musculação, Acessórios", "Linhas profissionais (Concept, Titanium, Monster, etc)", "Diferenças entre modelos residenciais e profissionais", "Promoções: Kikos Black, Outlet, parcelamento 21x"]} />
+              <FeatureCard icon={BookOpen} title="Conhecimento Especializado" items={["Portfólio completo: Cardiovasculares, Musculação, Acessórios", "Linhas profissionais (Concept, Titanium, Monster, etc)", "Diferenças entre modelos residenciais e profissionais", "App Kikos Fit: 35K usuários ativos, integração com equipamentos IoT", "Promoções: Kikos Black, Outlet, parcelamento 21x"]} />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Quem é a Kikos Fitness */}
+      <section className="py-20 border-t border-border">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                Quem é a Kikos Fitness
+              </h2>
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+                Pioneira e referência nacional em equipamentos fitness há mais de 35 anos
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-6">
+              {/* História */}
+              <div className="bg-card border border-border rounded-lg p-6">
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                  <Award className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="text-lg font-bold mb-3">História de Sucesso</h3>
+                <ul className="space-y-2 text-sm text-muted-foreground">
+                  <li>• Fundada por <strong className="text-foreground">Kiko Bonventi</strong></li>
+                  <li>• 35+ anos de mercado (desde 1990)</li>
+                  <li>• Primeira fabricante nacional de esteiras</li>
+                  <li>• Pioneira em showrooms experienciais</li>
+                </ul>
+              </div>
+
+              {/* Infraestrutura */}
+              <div className="bg-card border border-border rounded-lg p-6">
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                  <Building2 className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="text-lg font-bold mb-3">Infraestrutura Nacional</h3>
+                <ul className="space-y-2 text-sm text-muted-foreground">
+                  <li>• <strong className="text-foreground">20 showrooms</strong> em todo Brasil</li>
+                  <li>• 2 centros de distribuição (SP e SC)</li>
+                  <li>• 200+ colaboradores diretos</li>
+                  <li>• 300 revendedores autorizados</li>
+                </ul>
+              </div>
+
+              {/* Números */}
+              <div className="bg-card border border-border rounded-lg p-6">
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                  <TrendingUp className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="text-lg font-bold mb-3">Alcance e Impacto</h3>
+                <ul className="space-y-2 text-sm text-muted-foreground">
+                  <li>• <strong className="text-foreground">50.000+ salas</strong> equipadas</li>
+                  <li>• 149.000 seguidores nas redes</li>
+                  <li>• Faturamento: R$ 150-250 milhões/ano</li>
+                  <li>• Market share: 8-12% nacional</li>
+                </ul>
+              </div>
+            </div>
+
+            {/* App Kikos Fit */}
+            <div className="mt-8 bg-gradient-to-r from-primary/10 to-primary/5 border border-primary/20 rounded-lg p-8">
+              <div className="flex flex-col md:flex-row items-center gap-6">
+                <div className="w-16 h-16 bg-primary rounded-lg flex items-center justify-center flex-shrink-0">
+                  <Smartphone className="w-8 h-8 text-primary-foreground" />
+                </div>
+                <div className="flex-1 text-center md:text-left">
+                  <h3 className="text-xl font-bold mb-2">App Kikos Fit</h3>
+                  <p className="text-muted-foreground mb-3">
+                    Investimento de <strong className="text-foreground">R$ 10 milhões</strong> em tecnologia para criar 
+                    um ecossistema fitness completo: <strong className="text-foreground">35.000 usuários ativos</strong> e 
+                    85.000 cadastrados.
+                  </p>
+                  <div className="flex flex-wrap gap-2 justify-center md:justify-start">
+                    <span className="text-xs px-3 py-1 bg-primary/10 border border-primary/20 rounded-full">
+                      Treinos personalizados
+                    </span>
+                    <span className="text-xs px-3 py-1 bg-primary/10 border border-primary/20 rounded-full">
+                      Acompanhamento de evolução
+                    </span>
+                    <span className="text-xs px-3 py-1 bg-primary/10 border border-primary/20 rounded-full">
+                      Integração com equipamentos IoT
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Diferenciais Competitivos */}
+      <section className="py-20 bg-secondary/20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                Por que a Kikos é líder de mercado
+              </h2>
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+                Diferenciais que fazem da Kikos a escolha de 50.000+ academias e consumidores
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {/* Tecnologia Nacional */}
+              <div className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
+                <div className="w-12 h-12 bg-emerald-500/10 rounded-lg flex items-center justify-center mb-4">
+                  <Flag className="w-6 h-6 text-emerald-500" />
+                </div>
+                <h3 className="font-bold mb-2">Tecnologia 🇧🇷</h3>
+                <p className="text-sm text-muted-foreground">
+                  100% desenvolvida no Brasil, com know-how de 35 anos e assistência técnica em todo território nacional
+                </p>
+              </div>
+
+              {/* Portfólio Completo */}
+              <div className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
+                <div className="w-12 h-12 bg-blue-500/10 rounded-lg flex items-center justify-center mb-4">
+                  <Package className="w-6 h-6 text-blue-500" />
+                </div>
+                <h3 className="font-bold mb-2">Portfólio Completo</h3>
+                <p className="text-sm text-muted-foreground">
+                  Do residencial ao profissional: 4 categorias, 9 linhas de máquinas, centenas de produtos
+                </p>
+              </div>
+
+              {/* Assistência Técnica */}
+              <div className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
+                <div className="w-12 h-12 bg-purple-500/10 rounded-lg flex items-center justify-center mb-4">
+                  <Wrench className="w-6 h-6 text-purple-500" />
+                </div>
+                <h3 className="font-bold mb-2">Assistência Própria</h3>
+                <p className="text-sm text-muted-foreground">
+                  50+ técnicos certificados, peças originais em estoque, atendimento em 24-48h nas principais capitais
+                </p>
+              </div>
+
+              {/* Condições Comerciais */}
+              <div className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
+                <div className="w-12 h-12 bg-cyan-500/10 rounded-lg flex items-center justify-center mb-4">
+                  <CreditCard className="w-6 h-6 text-cyan-500" />
+                </div>
+                <h3 className="font-bold mb-2">Condições Flexíveis</h3>
+                <p className="text-sm text-muted-foreground">
+                  Até 21x sem juros (B2C), até 100x (B2B), 20% desconto à vista, promoções semanais
+                </p>
+              </div>
+            </div>
+
+            {/* Reputação */}
+            <div className="mt-8 grid md:grid-cols-3 gap-6">
+              <div className="bg-card border border-primary/30 rounded-lg p-6 text-center">
+                <div className="text-4xl font-bold text-primary mb-2">7.9/10</div>
+                <p className="text-sm text-muted-foreground">Reclame Aqui</p>
+                <p className="text-xs text-muted-foreground mt-1">98.4% de respostas</p>
+              </div>
+              <div className="bg-card border border-primary/30 rounded-lg p-6 text-center">
+                <div className="text-4xl font-bold text-primary mb-2">35+</div>
+                <p className="text-sm text-muted-foreground">Anos de Mercado</p>
+                <p className="text-xs text-muted-foreground mt-1">Desde 1990</p>
+              </div>
+              <div className="bg-card border border-primary/30 rounded-lg p-6 text-center">
+                <div className="text-4xl font-bold text-primary mb-2">Top 3</div>
+                <p className="text-sm text-muted-foreground">Fabricante Nacional</p>
+                <p className="text-xs text-muted-foreground mt-1">Market share 8-12%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Personas e Casos de Uso */}
+      <section className="py-20 border-t border-border">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                Quem o Geon SDR atende perfeitamente
+              </h2>
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+                Personas reais, com necessidades distintas, todas atendidas automaticamente
+              </p>
+            </div>
+
+            {/* B2C */}
+            <div className="mb-12">
+              <h3 className="text-2xl font-bold mb-6 flex items-center gap-2">
+                <Home className="w-6 h-6 text-primary" />
+                Consumidor Final (B2C) - 30% da receita
+              </h3>
+              <div className="grid md:grid-cols-3 gap-6">
+                {/* Carlos - Profissional */}
+                <div className="bg-card border border-border rounded-lg p-6">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-12 h-12 rounded-full bg-blue-500/10 flex items-center justify-center">
+                      <Briefcase className="w-6 h-6 text-blue-500" />
+                    </div>
+                    <div>
+                      <h4 className="font-bold">Carlos, 38 anos</h4>
+                      <p className="text-xs text-muted-foreground">Gerente Comercial</p>
+                    </div>
+                  </div>
+                  <p className="text-sm text-muted-foreground mb-3">
+                    Quer montar home gym completa. Orçamento R$ 8-12mil. Praticante avançado, pesquisa muito antes de comprar.
+                  </p>
+                  <div className="space-y-2">
+                    <p className="text-xs"><strong>Necessita:</strong> Esteira profissional + Estação</p>
+                    <p className="text-xs"><strong>Objeção:</strong> "E se eu não usar?"</p>
+                    <p className="text-xs text-primary"><strong>Geon resolve:</strong> Qualifica perfil, agenda showroom, calcula ROI vs academia</p>
+                  </div>
+                </div>
+
+                {/* Juliana - Mãe */}
+                <div className="bg-card border border-border rounded-lg p-6">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-12 h-12 rounded-full bg-pink-500/10 flex items-center justify-center">
+                      <Heart className="w-6 h-6 text-pink-500" />
+                    </div>
+                    <div>
+                      <h4 className="font-bold">Juliana, 42 anos</h4>
+                      <p className="text-xs text-muted-foreground">Empresária e Mãe</p>
+                    </div>
+                  </div>
+                  <p className="text-sm text-muted-foreground mb-3">
+                    Iniciante, recomendação médica. Orçamento R$ 3-5mil. Tem vergonha de academia, quer treinar em casa.
+                  </p>
+                  <div className="space-y-2">
+                    <p className="text-xs"><strong>Necessita:</strong> Esteira residencial fácil de usar</p>
+                    <p className="text-xs"><strong>Objeção:</strong> "Não sei qual escolher"</p>
+                    <p className="text-xs text-primary"><strong>Geon resolve:</strong> Consultoria, recomenda modelo ideal, explica parcelamento 21x</p>
+                  </div>
+                </div>
+
+                {/* Rodrigo - Atleta */}
+                <div className="bg-card border border-border rounded-lg p-6">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-12 h-12 rounded-full bg-orange-500/10 flex items-center justify-center">
+                      <Dumbbell className="w-6 h-6 text-orange-500" />
+                    </div>
+                    <div>
+                      <h4 className="font-bold">Rodrigo, 28 anos</h4>
+                      <p className="text-xs text-muted-foreground">Dev & Atleta Amador</p>
+                    </div>
+                  </div>
+                  <p className="text-sm text-muted-foreground mb-3">
+                    Avançado, faz crossfit. Orçamento R$ 6-10mil. Quer equipamentos robustos com IoT para treinos intensos.
+                  </p>
+                  <div className="space-y-2">
+                    <p className="text-xs"><strong>Necessita:</strong> Air Bike + acessórios funcionais</p>
+                    <p className="text-xs"><strong>Objeção:</strong> "Aguentam treino pesado?"</p>
+                    <p className="text-xs text-primary"><strong>Geon resolve:</strong> Detalha specs técnicas, conecta com app Kikos Fit</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* B2B */}
+            <div>
+              <h3 className="text-2xl font-bold mb-6 flex items-center gap-2">
+                <Building2 className="w-6 h-6 text-primary" />
+                Corporativo (B2B) - 60% da receita
+              </h3>
+              <div className="grid md:grid-cols-2 gap-6">
+                {/* Fernando - Dono de Academia */}
+                <div className="bg-card border border-primary/20 rounded-lg p-6">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                      <Store className="w-6 h-6 text-primary" />
+                    </div>
+                    <div>
+                      <h4 className="font-bold">Fernando, 45 anos</h4>
+                      <p className="text-xs text-muted-foreground">Dono de Academia (400m², 300 alunos)</p>
+                    </div>
+                  </div>
+                  <p className="text-sm text-muted-foreground mb-3">
+                    Precisa renovar 30 equipamentos. Orçamento R$ 180-250mil. Quer parcelamento longo e assistência garantida.
+                  </p>
+                  <div className="space-y-2">
+                    <p className="text-xs"><strong>Necessita:</strong> 10 esteiras + 15 máquinas + acessórios</p>
+                    <p className="text-xs"><strong>Objeção:</strong> "Preço acima do orçado, assistência demora"</p>
+                    <p className="text-xs text-primary"><strong>Geon resolve:</strong> Agenda visita técnica, oferece projeto 3D, parcela em até 100x</p>
+                  </div>
+                </div>
+
+                {/* Paula - Síndica */}
+                <div className="bg-card border border-primary/20 rounded-lg p-6">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                      <Users className="w-6 h-6 text-primary" />
+                    </div>
+                    <div>
+                      <h4 className="font-bold">Paula, 52 anos</h4>
+                      <p className="text-xs text-muted-foreground">Síndica (condomínio 120 apts)</p>
+                    </div>
+                  </div>
+                  <p className="text-sm text-muted-foreground mb-3">
+                    Reformar academia do condomínio. Orçamento R$ 80-120mil. Precisa aprovar em assembleia, quer garantias.
+                  </p>
+                  <div className="space-y-2">
+                    <p className="text-xs"><strong>Necessita:</strong> 3 esteiras + 2 bikes + elíptico + estação</p>
+                    <p className="text-xs"><strong>Objeção:</strong> "Preciso de 3 orçamentos, e se quebrar?"</p>
+                    <p className="text-xs text-primary"><strong>Geon resolve:</strong> Envia projeto 3D para assembleia, explica garantia, fornece referências</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Resumo */}
+            <div className="mt-8 bg-gradient-to-r from-primary/10 to-primary/5 border border-primary/20 rounded-lg p-6 text-center">
+              <p className="text-muted-foreground">
+                <strong className="text-foreground">5 personas diferentes, com orçamentos de R$ 3mil a R$ 250mil,</strong> todas atendidas simultaneamente 24/7 pelo Geon SDR, com qualificação precisa e direcionamento correto para os canais de venda (B2B ou SAC).
+              </p>
             </div>
           </div>
         </div>
@@ -339,9 +674,88 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-border py-8">
-        <div className="container mx-auto px-4 text-center text-sm text-muted-foreground">
-          <p>© 2025 Geon AI. Infraestrutura e Automação de IA para maximizar resultados.</p>
+      <footer className="border-t border-border py-12 bg-secondary/20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="grid md:grid-cols-4 gap-8 mb-8">
+              {/* Sobre */}
+              <div>
+                <h4 className="font-bold mb-4">Kikos Fitness</h4>
+                <p className="text-sm text-muted-foreground mb-2">
+                  Pioneira em equipamentos fitness no Brasil há 35+ anos
+                </p>
+                <p className="text-xs text-muted-foreground">
+                  Top 3 fabricantes nacionais
+                </p>
+              </div>
+
+              {/* Contatos */}
+              <div>
+                <h4 className="font-bold mb-4">Contatos</h4>
+                <div className="space-y-2 text-sm text-muted-foreground">
+                  <p className="flex items-center gap-2">
+                    <Phone className="w-4 h-4" />
+                    WhatsApp B2B: (11) 99107-8698
+                  </p>
+                  <p className="flex items-center gap-2">
+                    <Phone className="w-4 h-4" />
+                    WhatsApp SAC: (54) 95414-1816
+                  </p>
+                  <p className="flex items-center gap-2">
+                    <Phone className="w-4 h-4" />
+                    Televendas: (11) 3097-8292
+                  </p>
+                </div>
+              </div>
+
+              {/* Endereço */}
+              <div>
+                <h4 className="font-bold mb-4">Sede</h4>
+                <p className="text-sm text-muted-foreground">
+                  Av. dos Bandeirantes, 5066<br />
+                  Planalto Paulista<br />
+                  São Paulo - SP<br />
+                  CEP: 04.071-000
+                </p>
+              </div>
+
+              {/* Números */}
+              <div>
+                <h4 className="font-bold mb-4">Em Números</h4>
+                <div className="space-y-2 text-sm">
+                  <p className="text-muted-foreground">
+                    <strong className="text-foreground">50.000+</strong> salas equipadas
+                  </p>
+                  <p className="text-muted-foreground">
+                    <strong className="text-foreground">20</strong> showrooms
+                  </p>
+                  <p className="text-muted-foreground">
+                    <strong className="text-foreground">300</strong> revendedores
+                  </p>
+                  <p className="text-muted-foreground">
+                    <strong className="text-foreground">149K</strong> seguidores
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+              <p className="text-sm text-muted-foreground text-center md:text-left">
+                © 2025 Kikos Fitness. Há 35 anos juntos pela saúde. Todos os direitos reservados.
+              </p>
+              <div className="flex gap-4">
+                <a href="https://www.instagram.com/kikosoficial/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                  <Instagram className="w-5 h-5" />
+                </a>
+                <a href="https://www.facebook.com/KikosFitnessStore/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                  <Facebook className="w-5 h-5" />
+                </a>
+                <a href="https://www.linkedin.com/company/kikosfitnessoficial/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                  <Linkedin className="w-5 h-5" />
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </footer>
     </div>;
