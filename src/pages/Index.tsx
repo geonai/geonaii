@@ -770,9 +770,9 @@ const Index = () => {
                         <div className="font-bold">GPT-4o-mini</div>
                         <div className="text-xs text-muted-foreground">Custo-benefício ideal</div>
                       </td>
-                      <td className="text-center py-4 px-4 font-semibold text-emerald-500">$0.15</td>
-                      <td className="text-center py-4 px-4 text-sm text-muted-foreground">$0.075</td>
-                      <td className="text-center py-4 px-4 font-semibold text-orange-500">$0.60</td>
+                      <td className="text-center py-4 px-4 font-semibold text-emerald-500">$0.25</td>
+                      <td className="text-center py-4 px-4 text-sm text-muted-foreground">$1.00</td>
+                      <td className="text-center py-4 px-4 font-semibold text-orange-500">$0.75</td>
                       <td className="py-4 px-4 text-sm text-muted-foreground">Perfeito para qualificação de leads e atendimento</td>
                     </tr>
                   </tbody>
