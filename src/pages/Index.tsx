@@ -765,35 +765,15 @@ const Index = () => {
                     </tr>
                   </thead>
                   <tbody>
-                    <tr className="border-b border-border/50 hover:bg-primary/5 transition-colors">
-                      <td className="py-4 px-4">
-                        <div className="font-bold">GPT-5</div>
-                        <div className="text-xs text-muted-foreground">Mais poderoso</div>
-                      </td>
-                      <td className="text-center py-4 px-4 font-semibold text-emerald-500">$1.25</td>
-                      <td className="text-center py-4 px-4 text-sm text-muted-foreground">$0.125</td>
-                      <td className="text-center py-4 px-4 font-semibold text-orange-500">$10.00</td>
-                      <td className="py-4 px-4 text-sm text-muted-foreground">Consultas complexas, análise profunda</td>
-                    </tr>
-                    <tr className="border-b border-border/50 hover:bg-primary/5 transition-colors">
-                      <td className="py-4 px-4">
-                        <div className="font-bold">GPT-4o</div>
-                        <div className="text-xs text-muted-foreground">Rápido e eficiente</div>
-                      </td>
-                      <td className="text-center py-4 px-4 font-semibold text-emerald-500">$2.50</td>
-                      <td className="text-center py-4 px-4 text-sm text-muted-foreground">$1.25</td>
-                      <td className="text-center py-4 px-4 font-semibold text-orange-500">$10.00</td>
-                      <td className="py-4 px-4 text-sm text-muted-foreground">Multimodal, imagens + texto</td>
-                    </tr>
                     <tr className="hover:bg-primary/5 transition-colors">
                       <td className="py-4 px-4">
                         <div className="font-bold">GPT-4o-mini</div>
-                        <div className="text-xs text-muted-foreground">Custo-benefício</div>
+                        <div className="text-xs text-muted-foreground">Custo-benefício ideal</div>
                       </td>
                       <td className="text-center py-4 px-4 font-semibold text-emerald-500">$0.15</td>
                       <td className="text-center py-4 px-4 text-sm text-muted-foreground">$0.075</td>
                       <td className="text-center py-4 px-4 font-semibold text-orange-500">$0.60</td>
-                      <td className="py-4 px-4 text-sm text-muted-foreground">Consultas simples, alto volume</td>
+                      <td className="py-4 px-4 text-sm text-muted-foreground">Perfeito para qualificação de leads e atendimento</td>
                     </tr>
                   </tbody>
                 </table>
@@ -801,8 +781,8 @@ const Index = () => {
               
               <div className="mt-6 p-4 bg-primary/10 border border-primary/20 rounded-lg">
                 <p className="text-sm text-muted-foreground">
-                  <strong className="text-foreground">💡 Dica:</strong> O Geon SDR usa automaticamente o modelo mais adequado para cada tipo de interação, 
-                  otimizando custos sem sacrificar qualidade. Mensagens simples usam GPT-4o-mini, enquanto consultas técnicas complexas usam GPT-5.
+                  <strong className="text-foreground">💡 Dica:</strong> O Geon SDR utiliza o GPT-4o-mini, oferecendo o melhor custo-benefício 
+                  para qualificação de leads e atendimento automatizado, mantendo alta qualidade nas respostas.
                 </p>
               </div>
             </div>
