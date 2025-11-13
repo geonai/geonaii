@@ -759,7 +759,7 @@ const Index = () => {
                     <tr className="border-b border-border">
                       <th className="text-left py-4 px-4 font-bold">Modelo</th>
                       <th className="text-center py-4 px-4 font-bold">Input</th>
-                      <th className="text-center py-4 px-4 font-bold">Cached Input</th>
+                      <th className="text-center py-4 px-4 font-bold">IPO    </th>
                       <th className="text-center py-4 px-4 font-bold">Output</th>
                       <th className="text-left py-4 px-4 font-bold">Melhor Para</th>
                     </tr>
