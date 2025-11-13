@@ -673,6 +673,174 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Precificação e Estimativas de Tokens */}
+      <section className="py-20 bg-secondary/10">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                Precificação Transparente e Estimativas
+              </h2>
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+                Entenda como funcionam os tokens e quanto você pode processar
+              </p>
+            </div>
+
+            {/* Explicação de Tokens */}
+            <div className="bg-card border border-border rounded-lg p-8 mb-8">
+              <h3 className="text-2xl font-bold mb-6 flex items-center gap-2">
+                <Zap className="w-6 h-6 text-primary" />
+                O que são tokens?
+              </h3>
+              <div className="grid md:grid-cols-3 gap-6">
+                <div className="text-center">
+                  <div className="text-4xl font-bold text-primary mb-2">≈4</div>
+                  <p className="text-sm text-muted-foreground">caracteres por token</p>
+                </div>
+                <div className="text-center">
+                  <div className="text-4xl font-bold text-primary mb-2">15-20</div>
+                  <p className="text-sm text-muted-foreground">palavras = 1 frase (60-80 tokens)</p>
+                </div>
+                <div className="text-center">
+                  <div className="text-4xl font-bold text-primary mb-2">120-200</div>
+                  <p className="text-sm text-muted-foreground">tokens = 1 mensagem média</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Estimativas Práticas */}
+            <div className="bg-card border border-border rounded-lg p-8 mb-8">
+              <h3 className="text-2xl font-bold mb-6">Estimativas Práticas com 1 Milhão de Tokens</h3>
+              <div className="grid md:grid-cols-3 gap-6">
+                <div className="bg-gradient-to-br from-emerald-500/10 to-emerald-500/5 border border-emerald-500/20 rounded-lg p-6">
+                  <div className="flex items-center gap-2 mb-3">
+                    <MessageSquare className="w-5 h-5 text-emerald-500" />
+                    <h4 className="font-bold">Mensagens Curtas</h4>
+                  </div>
+                  <div className="text-3xl font-bold text-emerald-500 mb-2">~20.000</div>
+                  <p className="text-sm text-muted-foreground mb-3">mensagens</p>
+                  <p className="text-xs text-muted-foreground">
+                    50 tokens cada (respostas rápidas, confirmações)
+                  </p>
+                </div>
+
+                <div className="bg-gradient-to-br from-blue-500/10 to-blue-500/5 border border-blue-500/20 rounded-lg p-6">
+                  <div className="flex items-center gap-2 mb-3">
+                    <MessageSquare className="w-5 h-5 text-blue-500" />
+                    <h4 className="font-bold">Mensagens Médias</h4>
+                  </div>
+                  <div className="text-3xl font-bold text-blue-500 mb-2">~6.600</div>
+                  <p className="text-sm text-muted-foreground mb-3">mensagens</p>
+                  <p className="text-xs text-muted-foreground">
+                    150 tokens cada (consultas típicas, qualificação)
+                  </p>
+                </div>
+
+                <div className="bg-gradient-to-br from-purple-500/10 to-purple-500/5 border border-purple-500/20 rounded-lg p-6">
+                  <div className="flex items-center gap-2 mb-3">
+                    <MessageSquare className="w-5 h-5 text-purple-500" />
+                    <h4 className="font-bold">Mensagens Longas</h4>
+                  </div>
+                  <div className="text-3xl font-bold text-purple-500 mb-2">~3.300</div>
+                  <p className="text-sm text-muted-foreground mb-3">mensagens</p>
+                  <p className="text-xs text-muted-foreground">
+                    300 tokens cada (consultas complexas, técnicas)
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Tabela de Preços */}
+            <div className="bg-card border border-border rounded-lg p-8">
+              <h3 className="text-2xl font-bold mb-6">Preços por Modelo (por milhão de tokens)</h3>
+              <div className="overflow-x-auto">
+                <table className="w-full">
+                  <thead>
+                    <tr className="border-b border-border">
+                      <th className="text-left py-4 px-4 font-bold">Modelo</th>
+                      <th className="text-center py-4 px-4 font-bold">Input</th>
+                      <th className="text-center py-4 px-4 font-bold">Cached Input</th>
+                      <th className="text-center py-4 px-4 font-bold">Output</th>
+                      <th className="text-left py-4 px-4 font-bold">Melhor Para</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="border-b border-border/50 hover:bg-primary/5 transition-colors">
+                      <td className="py-4 px-4">
+                        <div className="font-bold">GPT-5</div>
+                        <div className="text-xs text-muted-foreground">Mais poderoso</div>
+                      </td>
+                      <td className="text-center py-4 px-4 font-semibold text-emerald-500">$1.25</td>
+                      <td className="text-center py-4 px-4 text-sm text-muted-foreground">$0.125</td>
+                      <td className="text-center py-4 px-4 font-semibold text-orange-500">$10.00</td>
+                      <td className="py-4 px-4 text-sm text-muted-foreground">Consultas complexas, análise profunda</td>
+                    </tr>
+                    <tr className="border-b border-border/50 hover:bg-primary/5 transition-colors">
+                      <td className="py-4 px-4">
+                        <div className="font-bold">GPT-4o</div>
+                        <div className="text-xs text-muted-foreground">Rápido e eficiente</div>
+                      </td>
+                      <td className="text-center py-4 px-4 font-semibold text-emerald-500">$2.50</td>
+                      <td className="text-center py-4 px-4 text-sm text-muted-foreground">$1.25</td>
+                      <td className="text-center py-4 px-4 font-semibold text-orange-500">$10.00</td>
+                      <td className="py-4 px-4 text-sm text-muted-foreground">Multimodal, imagens + texto</td>
+                    </tr>
+                    <tr className="hover:bg-primary/5 transition-colors">
+                      <td className="py-4 px-4">
+                        <div className="font-bold">GPT-4o-mini</div>
+                        <div className="text-xs text-muted-foreground">Custo-benefício</div>
+                      </td>
+                      <td className="text-center py-4 px-4 font-semibold text-emerald-500">$0.15</td>
+                      <td className="text-center py-4 px-4 text-sm text-muted-foreground">$0.075</td>
+                      <td className="text-center py-4 px-4 font-semibold text-orange-500">$0.60</td>
+                      <td className="py-4 px-4 text-sm text-muted-foreground">Consultas simples, alto volume</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              
+              <div className="mt-6 p-4 bg-primary/10 border border-primary/20 rounded-lg">
+                <p className="text-sm text-muted-foreground">
+                  <strong className="text-foreground">💡 Dica:</strong> O Geon SDR usa automaticamente o modelo mais adequado para cada tipo de interação, 
+                  otimizando custos sem sacrificar qualidade. Mensagens simples usam GPT-4o-mini, enquanto consultas técnicas complexas usam GPT-5.
+                </p>
+              </div>
+            </div>
+
+            {/* Exemplo Prático */}
+            <div className="mt-8 bg-gradient-to-r from-primary/10 to-primary/5 border border-primary/20 rounded-lg p-8">
+              <h3 className="text-xl font-bold mb-4">Exemplo Prático: Kikos Fitness</h3>
+              <div className="grid md:grid-cols-2 gap-6">
+                <div>
+                  <h4 className="font-semibold mb-3 flex items-center gap-2">
+                    <Target className="w-5 h-5 text-primary" />
+                    Cenário Real
+                  </h4>
+                  <ul className="space-y-2 text-sm text-muted-foreground">
+                    <li>• 1.000 leads/mês via site, showrooms e revendedores</li>
+                    <li>• Média de 5 mensagens por lead (qualificação completa)</li>
+                    <li>• ~150 tokens por mensagem (média)</li>
+                    <li>• <strong className="text-foreground">Total: 750.000 tokens/mês</strong></li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="font-semibold mb-3 flex items-center gap-2">
+                    <BarChart3 className="w-5 h-5 text-primary" />
+                    Custo Estimado
+                  </h4>
+                  <ul className="space-y-2 text-sm text-muted-foreground">
+                    <li>• Input: 0.75M × $0.15 = <strong className="text-foreground">$112.50</strong></li>
+                    <li>• Output: 0.75M × $0.60 = <strong className="text-foreground">$450.00</strong></li>
+                    <li>• <strong className="text-primary text-lg">Total: ~$562.50/mês</strong></li>
+                    <li className="text-emerald-500">• <strong>vs R$ 12.000/mês</strong> (SDR humano)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="border-t border-border py-12 bg-secondary/20">
         <div className="container mx-auto px-4">
