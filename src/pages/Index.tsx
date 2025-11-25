@@ -4,6 +4,7 @@ import { FeatureCard } from "@/components/FeatureCard";
 import { IntegrationBadge } from "@/components/IntegrationBadge";
 import { Clock, TrendingDown, Zap, TrendingUp, Brain, MessageSquare, Calendar, BookOpen, AlertTriangle, CheckCircle2, Target, BarChart3, Database, Mail, Phone, Users, Building2, Store, Award, Package, Flag, Wrench, CreditCard, Smartphone, Home, Briefcase, Heart, Dumbbell, Instagram, Facebook, Linkedin } from "lucide-react";
 import logo from "@/assets/logo.png";
+import kikosLogo from "@/assets/kikos-logo.png";
 const Index = () => {
   return <div className="min-h-screen bg-background text-foreground">
       {/* Header */}
@@ -12,7 +13,7 @@ const Index = () => {
           <div className="flex items-center gap-4">
             <img src={logo} alt="GEON AI Logo" className="h-10 w-auto object-contain" />
             <span className="text-2xl text-muted-foreground">×</span>
-            <span className="text-2xl font-bold text-primary">Kikos Fitness</span>
+            <img src={kikosLogo} alt="Kikos Fitness Logo" className="h-10 w-auto object-contain" />
           </div>
         </div>
       </header>
